@@ -1,0 +1,70 @@
+**********************************
+// Example 1
+**********************************
+class Person {
+  String? name;
+  int? age;
+  
+//   Person(String inputName , int age){
+//     name = inputName;
+//     this.age = age ; 
+//   }
+  
+   Person({this.name , this.age = 100});
+  
+  Person.veryOld(this.name){
+    age = 60;
+  }
+}
+
+
+num addNumbers(num num1,num num2) {
+  // print(num1 + num2) ;
+  return num1 + num2;
+}
+
+void main() {
+  var p1 = Person(name :'MAx',age : 31);
+  var p2 = Person(name :'Abo Badr', age :27);
+  var p3 = Person.veryOld('Badrenios');
+  print(p1.age);
+  print(p2.name);
+  print(p3.age);
+  var firstResult;
+  firstResult = addNumbers(5,10.5);
+  print(firstResult + 12);
+  print('Hello Ya welad');
+}
+
+
+**********************************
+// Example 2
+**********************************
+void main() {
+  var isLoggedIn = false;
+  var userName = 'Badrenios';
+  var password = 'Tester';
+  var hasCorrectCredentials = userName == 'Badrenios' && password == 'Tester';
+  var age = 27;
+  if(hasCorrectCredentials || age > 20) {
+    print('Logged IN');
+  }
+  else {
+    print('Failed');
+  }
+}
+
+
+**********************************
+// Example 3
+**********************************
+void main() {
+  var userName;
+  
+  if (userName != null){
+    userName = null;    
+  }
+  print(userName);
+}
+
+

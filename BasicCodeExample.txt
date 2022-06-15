@@ -1,0 +1,50 @@
+import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(MyApp());
+// }
+
+void main() => runApp(MyApp());
+
+// ignore_for_file: prefer_const_constructors
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('My First App'),
+        ),
+        body: Text('This is My Default Text'),
+      ),
+    );
+  }
+}
+
+
+// Example on using const on variables or objects
+var questions = const [
+      {
+        'questionText': 'What\'s your favorite color?',
+        'answers': ['black', 'red', 'green', 'white'],
+      },
+      {
+        'questionText': 'What\'s your favorite animal?',
+        'answers': ['cat', 'dog', 'bird', 'fish'],
+      },
+      {
+        'questionText': 'Who\'s your favorite instructor?',
+        'answers': ['Badrenios', 'Abo Badr', 'Badr', 'Max'],
+      },
+    ];
+
+questions = ['Test','Test]
+
+
+// Another Example 
+var dummy = ['Hello];
+dummy.add('Max');
+print(dummy)
+
+var dummy = const ['Hello]; // Will Cause an error cant modify 
+dummy.add('Max');
